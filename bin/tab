@@ -1,0 +1,14 @@
+#!/usr/bin/osascript
+tell application "iTerm"
+  if it is running then
+    tell current window
+      activate
+      create tab with default profile
+    end tell
+  else
+    tell application "iTerm"
+      activate
+    end tell
+  end if
+end tell
+return
